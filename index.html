@@ -16,12 +16,54 @@
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
 
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
     <title>Document</title>
 </head>
 <body>
-    <div id="mapid"></div>
+    <div class="wrapper"> 
+
+
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="https://www.knust.edu.gh/" target="_blank">KNUST Home</a>
+                </li>
+                <li>
+                    <a href="https://geomatics.knust.edu.gh/" target="_blank">Geomatic Department</a>
+                </li>
+                <!-- <li>
+                    <a href="https://github.com/sadatyussuf/mapOfCoordinatesInKnust" target="_blank">Github</a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <!--  <div class="w-full py-24 px-6 bg-cover bg-no-repeat bg-center relative z-10" style="background-image: url(./banner3.jpg);">
+		
+			<div class="container max-w-4xl mx-auto text-center">
+				<h1 class="text-xl leading-tight md:text-3xl text-center text-gray-100 mb-3">Lorem ipsum dolor sit amet</h1>
+				<p class="text-md md:text-lg text-center text-white ">Ut enim ad minim veniam, quis nostrud exercitation</p>
+
+				<a href="/register" class="mt-6 inline-block bg-white text-black no-underline px-4 py-3 shadow-lg">Find out more</a>
+			</div>
+
+		</div>
+        <!-- <div class="banner">
+            
+			<div class="container max-w-4xl mx-auto text-center">
+            <h2 class="text-xl leading-tight md:text-3xl text-center text-gray-100 mb-3">MAP OF KNUST CONTROL POINT</h2>
+            </div>
+
+        </div> -->
+
+
+        <div id="mapid"></div>
+
+    </div>
+    
 
     <script src="script.js"></script>
 </body>
