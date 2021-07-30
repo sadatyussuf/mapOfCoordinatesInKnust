@@ -1,0 +1,933 @@
+{
+  "type": "FeatureCollection",
+  "name": "latlon-new1",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "5GA P 130-13-1",
+        "latitude": 6.675141,
+        "longitude": -1.572226,
+        "Y": 692373.04790026252,
+        "X": 727618.6450131234,
+        "height": "261.508",
+        "Descprition": "N/A"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.572226, 6.675141] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "5GA P 13-3",
+        "latitude": 6.6786,
+        "longitude": -1.570923,
+        "Y": 692846.77165354334,
+        "X": 728873.00524934381,
+        "height": "252.354",
+        "Descprition": "N/A"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.570923, 6.6786] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "A1",
+        "latitude": 6.686684,
+        "longitude": -1.570961,
+        "Y": 692836.36154855636,
+        "X": 731805.42979002628,
+        "height": "263.989",
+        "Descprition": "N/A"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.570961, 6.686684] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "A2",
+        "latitude": 6.686681,
+        "longitude": -1.571047,
+        "Y": 692805.51837270346,
+        "X": 731804.36679790029,
+        "height": "263.755",
+        "Descprition": "N/A"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.571047, 6.686681] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "A3",
+        "latitude": 6.68668,
+        "longitude": -1.571194,
+        "Y": 692751.91601049877,
+        "X": 731803.82545931754,
+        "height": "263.361",
+        "Descprition": "N/A"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.571194, 6.68668] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "CCB 3",
+        "latitude": 6.676805,
+        "longitude": -1.565222,
+        "Y": 694913.71062992129,
+        "X": 728219.48818897642,
+        "height": "266.148",
+        "Descprition": "CCB Canteen"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565222, 6.676805] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "CCB 4",
+        "latitude": 6.684876,
+        "longitude": -1.570537,
+        "Y": 692989.6161417322,
+        "X": 731149.22244094487,
+        "height": "255.617",
+        "Descprition": "CCB Canteen"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.570537, 6.684876] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "CCB 5",
+        "latitude": 6.684966,
+        "longitude": -1.570539,
+        "Y": 692988.8353018373,
+        "X": 731182.08333333337,
+        "height": "255.628",
+        "Descprition": "CCB Canteen"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.570539, 6.684966] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "ED 4-09-13",
+        "latitude": 6.678571,
+        "longitude": -1.571161,
+        "Y": 692760.43307086616,
+        "X": 728862.44422572176,
+        "height": "254.549",
+        "Descprition": "Near Unity RoundAbout"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.571161, 6.678571] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "ENG 1",
+        "latitude": 6.67401,
+        "longitude": -1.565342,
+        "Y": 694869.31791338581,
+        "X": 727205.42913385818,
+        "height": "N/A",
+        "Descprition": "Behind Pharmacy library"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565342, 6.67401] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "ENG 2",
+        "latitude": 6.673801,
+        "longitude": -1.565457,
+        "Y": 694827.28510498686,
+        "X": 727129.68700787402,
+        "height": "N/A",
+        "Descprition": "Behind Animal Husbandary"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565457, 6.673801] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "ENG 3",
+        "latitude": 6.673603,
+        "longitude": -1.565398,
+        "Y": 694848.62893700786,
+        "X": 727057.98490813654,
+        "height": "N/A",
+        "Descprition": "Between Vodafone and Soil and Rock Lab"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565398, 6.673603] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "ENG 4",
+        "latitude": 6.673551,
+        "longitude": -1.565206,
+        "Y": 694918.35104986874,
+        "X": 727038.84711286088,
+        "height": "N/A",
+        "Descprition": "Between Wascal building and Kumapley "
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565206, 6.673551] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "ENG 5",
+        "latitude": 6.673722,
+        "longitude": -1.565177,
+        "Y": 694929.04101049865,
+        "X": 727101.0200131234,
+        "height": "N/A",
+        "Descprition": "Infront of Kumapley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565177, 6.673722] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "ENG 6",
+        "latitude": 6.673865,
+        "longitude": -1.565059,
+        "Y": 694971.78510498686,
+        "X": 727152.66994750651,
+        "height": "N/A",
+        "Descprition": "Beside Petroleum Building"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565059, 6.673865] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "ENG 7",
+        "latitude": 6.674012,
+        "longitude": -1.565179,
+        "Y": 694928.31003937009,
+        "X": 727206.14206036751,
+        "height": "N/A",
+        "Descprition": "Behind Engineering LT"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565179, 6.674012] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "GE 1-78-134",
+        "latitude": 6.674465,
+        "longitude": -1.573762,
+        "Y": 691815.63976377947,
+        "X": 727374.18307086627,
+        "height": "268.29000000000002",
+        "Descprition": "Near Great Hall"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.573762, 6.674465] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "GE CP 14-1",
+        "latitude": 6.669061,
+        "longitude": -1.567464,
+        "Y": 694097.48687664047,
+        "X": 725411.17454068246,
+        "height": "253.43100000000001",
+        "Descprition": "New KSB Auditorium"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.567464, 6.669061] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "GE CP 14-2",
+        "latitude": 6.669065,
+        "longitude": -1.567972,
+        "Y": 693913.26443569548,
+        "X": 725412.77887139108,
+        "height": "251.066",
+        "Descprition": "Infront of KSB Auditorium"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.567972, 6.669065] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "GE NR 02/16-1",
+        "latitude": 6.675817,
+        "longitude": -1.563933,
+        "Y": 695381.09580052493,
+        "X": 727860.45275590545,
+        "height": "269.08699999999999",
+        "Descprition": "Natsu Near Car Park"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.563933, 6.675817] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "GE NR 02/16-2",
+        "latitude": 6.676515,
+        "longitude": -1.564046,
+        "Y": 695340.25918635167,
+        "X": 728113.46128608927,
+        "height": "267.74700000000001",
+        "Descprition": "Natsu Near LT"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.564046, 6.676515] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "GE7 1-05-16",
+        "latitude": 6.67329,
+        "longitude": -1.565301,
+        "Y": 694883.90091863519,
+        "X": 726944.22572178475,
+        "height": "258.488",
+        "Descprition": "Art Car Park"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565301, 6.67329] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "GED ART 2016-1",
+        "latitude": 6.668944,
+        "longitude": -1.56568,
+        "Y": 694744.5964566929,
+        "X": 725368.02165354334,
+        "height": "260.96100000000001",
+        "Descprition": "Art Car Park"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.56568, 6.668944] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "GED ART 2016-2",
+        "latitude": 6.668949,
+        "longitude": -1.565148,
+        "Y": 694937.57545931754,
+        "X": 725369.38976377947,
+        "height": "260.50900000000001",
+        "Descprition": "Art Car Park"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565148, 6.668949] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE",
+        "latitude": 6.683589,
+        "longitude": -1.573865,
+        "Y": 691781.89960629924,
+        "X": 730683.76968503941,
+        "height": "269.74400000000003",
+        "Descprition": "Union Oil Junction"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.573865, 6.683589] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-10",
+        "latitude": 6.674094,
+        "longitude": -1.570873,
+        "Y": 692863.26443569548,
+        "X": 727238.17585301842,
+        "height": "248.55500000000001",
+        "Descprition": "At Administration Park 2"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.570873, 6.674094] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-11",
+        "latitude": 6.671305,
+        "longitude": -1.57184,
+        "Y": 692511.12860892387,
+        "X": 726226.98818897642,
+        "height": "246.56700000000001",
+        "Descprition": "STEVEN Pairs Hostel Junction"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.57184, 6.671305] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-12",
+        "latitude": 6.670436,
+        "longitude": -1.572633,
+        "Y": 692223.24803149607,
+        "X": 725912.14895013114,
+        "height": "248.083",
+        "Descprition": "Behind Brunai"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.572633, 6.670436] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-13",
+        "latitude": 6.669625,
+        "longitude": -1.573578,
+        "Y": 691880.35433070862,
+        "X": 725618.38582677161,
+        "height": "248.25200000000001",
+        "Descprition": "Behind Brunai"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.573578, 6.669625] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-14",
+        "latitude": 6.67119,
+        "longitude": -1.573533,
+        "Y": 691897.08333333337,
+        "X": 726185.80380577431,
+        "height": "256.59100000000001",
+        "Descprition": "Behind GRASAG Hostel"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.573533, 6.67119] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-15",
+        "latitude": 6.672422,
+        "longitude": -1.573514,
+        "Y": 691904.6194225722,
+        "X": 726632.94947506557,
+        "height": "260.697",
+        "Descprition": "On Katanga Brunai Junction"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.573514, 6.672422] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-16",
+        "latitude": 6.673809,
+        "longitude": -1.57234,
+        "Y": 692330.80052493443,
+        "X": 727135.42650918639,
+        "height": "260.83699999999999",
+        "Descprition": "On Katanga Road"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.57234, 6.673809] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-17",
+        "latitude": 6.678625,
+        "longitude": -1.571862,
+        "Y": 692200.85301837267,
+        "X": 726633.09055118111,
+        "height": "260.61599999999999",
+        "Descprition": "On Katanga Road"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.571862, 6.678625] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-17",
+        "latitude": 6.672424,
+        "longitude": -1.572697,
+        "Y": 692506.36482939636,
+        "X": 728882.19488188974,
+        "height": "259.02100000000002",
+        "Descprition": "Between Unity INDECE ANEX"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.572697, 6.672424] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-18",
+        "latitude": 6.679157,
+        "longitude": -1.572507,
+        "Y": 692272.7132545932,
+        "X": 729075.63976377947,
+        "height": "264.23899999999998",
+        "Descprition": "Between Unity and Hall Seven"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.572507, 6.679157] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-19",
+        "latitude": 6.679637,
+        "longitude": -1.57303,
+        "Y": 692083.31692913384,
+        "X": 729249.79002624669,
+        "height": "269.25200000000001",
+        "Descprition": "Between Unity and Hall Seven"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.57303, 6.679637] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-2",
+        "latitude": 6.668473,
+        "longitude": -1.565988,
+        "Y": 694632.55577427824,
+        "X": 725197.05708661419,
+        "height": "261.41699999999997",
+        "Descprition": "Infront to Art Near KSB"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565988, 6.668473] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-5",
+        "latitude": 6.673098,
+        "longitude": -1.568257,
+        "Y": 693811.60433070862,
+        "X": 726875.69225721783,
+        "height": "251.67",
+        "Descprition": "Inside SMS"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.568257, 6.673098] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-6",
+        "latitude": 6.673348,
+        "longitude": -1.567686,
+        "Y": 694018.74671916012,
+        "X": 726966.2270341207,
+        "height": "256.18900000000002",
+        "Descprition": "SMS Junction"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.567686, 6.673348] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 10-15-7",
+        "latitude": 6.674922,
+        "longitude": -1.566215,
+        "Y": 694552.77230971132,
+        "X": 727536.5485564305,
+        "height": "258.87200000000001",
+        "Descprition": "Between AGRIC park and Icy Cup Junction"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.566215, 6.674922] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 2-15-5",
+        "latitude": 6.668337,
+        "longitude": -1.568793,
+        "Y": 693615.32808398944,
+        "X": 725148.97309711284,
+        "height": "247.614",
+        "Descprition": "Behind KSB Auditorium"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.568793, 6.668337] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 2-15-6",
+        "latitude": 6.668331,
+        "longitude": -1.567969,
+        "Y": 693913.82874015754,
+        "X": 725146.31889763777,
+        "height": "254.01599999999999",
+        "Descprition": "Behind KSB Auditorium"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.567969, 6.668331] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST GE 4-04-1",
+        "latitude": 6.682675,
+        "longitude": -1.574994,
+        "Y": 691372.27690288716,
+        "X": 730352.92979002628,
+        "height": "275.91399999999999",
+        "Descprition": "Mail Junction"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.574994, 6.682675] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST TP6",
+        "latitude": 6.674072,
+        "longitude": -1.565186,
+        "Y": 694918.80905511812,
+        "X": 727227.65091863519,
+        "height": "263.72500000000002",
+        "Descprition": "Behind N-Block"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565186, 6.674072] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KNUST TP6",
+        "latitude": 6.674071,
+        "longitude": -1.565205,
+        "Y": 694925.66010498686,
+        "X": 727227.85006561689,
+        "height": "263.72500000000002",
+        "Descprition": "Behind N-Block"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565205, 6.674071] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KSB 1",
+        "latitude": 6.669845,
+        "longitude": -1.567064,
+        "Y": 694243.0511811024,
+        "X": 725695.1902887139,
+        "height": "249.61099999999999",
+        "Descprition": "Infront of the College of Disability"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.567064, 6.669845] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KSB 2",
+        "latitude": 6.668331,
+        "longitude": -1.566987,
+        "Y": 694270.03280839894,
+        "X": 725146.2270341207,
+        "height": "259.10399999999998",
+        "Descprition": "Entrance to Art Near KSB"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.566987, 6.668331] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "KUST GE 10-15-21",
+        "latitude": 6.678657,
+        "longitude": -1.569815,
+        "Y": 693248.72047244094,
+        "X": 728892.98556430452,
+        "height": "247.37200000000001",
+        "Descprition": "Between Unity RoundAbout and AGRIC Junction"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.569815, 6.678657] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "LS GE 4-03-1",
+        "latitude": 6.683101,
+        "longitude": -1.574324,
+        "Y": 691615.22637795273,
+        "X": 730506.86351706041,
+        "height": "276.22500000000002",
+        "Descprition": "Design Press Junction"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.574324, 6.683101] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "LS GE 4-03-11",
+        "latitude": 6.682013,
+        "longitude": -1.573115,
+        "Y": 692053.23162729654,
+        "X": 730111.91929133853,
+        "height": "269.80500000000001",
+        "Descprition": "Behind Fine Art Postgra Building"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.573115, 6.682013] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "LS GE 4-03-2",
+        "latitude": 6.683764,
+        "longitude": -1.573626,
+        "Y": 691868.7729658793,
+        "X": 730747.28018372704,
+        "height": "266.77699999999999",
+        "Descprition": "Union Oil Junction"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.573626, 6.683764] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "N1",
+        "latitude": 6.674047,
+        "longitude": -1.565272,
+        "Y": 694894.60695538053,
+        "X": 727218.91699475062,
+        "height": "N/A",
+        "Descprition": "Behind N-Block"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565272, 6.674047] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/1",
+        "latitude": 6.67514,
+        "longitude": -1.572227,
+        "Y": 692372.6902887139,
+        "X": 727618.1988188976,
+        "height": "261.72500000000002",
+        "Descprition": "Opposite the KNUST Main Library"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.572227, 6.67514] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/10",
+        "latitude": 6.683014,
+        "longitude": -1.574613,
+        "Y": 691510.64960629924,
+        "X": 730475.53149606299,
+        "height": "276.98599999999999",
+        "Descprition": "Along the Road from Basic School RoundAbout to College of Art"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.574613, 6.683014] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/11",
+        "latitude": 6.681855,
+        "longitude": -1.575798,
+        "Y": 691080.03937007871,
+        "X": 730055.59055118111,
+        "height": "272.79199999999997",
+        "Descprition": "At Commercial Area"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.575798, 6.681855] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/12",
+        "latitude": 6.682071,
+        "longitude": -1.576489,
+        "Y": 690829.75065616798,
+        "X": 730134.3208661417,
+        "height": "274.904",
+        "Descprition": "Near Old Museum Gate"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.576489, 6.682071] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/13",
+        "latitude": 6.682463,
+        "longitude": -1.57699,
+        "Y": 690648.22178477689,
+        "X": 730276.7585301837,
+        "height": "274.77300000000002",
+        "Descprition": "Bomso RoundAbout"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.57699, 6.682463] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/2",
+        "latitude": 6.675131,
+        "longitude": -1.570898,
+        "Y": 692854.40944881889,
+        "X": 727614.37992125982,
+        "height": "248.95599999999999",
+        "Descprition": "Main Admin, RoundAbout"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.570898, 6.675131] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/3",
+        "latitude": 6.6786,
+        "longitude": -1.570925,
+        "Y": 692846.36154855648,
+        "X": 728872.7985564305,
+        "height": "252.33500000000001",
+        "Descprition": "Unity Hall RoundAbout"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.570925, 6.6786] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/4",
+        "latitude": 6.679884,
+        "longitude": -1.570745,
+        "Y": 692911.84055118111,
+        "X": 729338.37926509185,
+        "height": "252.279",
+        "Descprition": "Between Unity Hall RoundAbout and Sport and Ex"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.570745, 6.679884] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/5",
+        "latitude": 6.681547,
+        "longitude": -1.569643,
+        "Y": 693312.32939632551,
+        "X": 729941.38123359578,
+        "height": "253.49700000000001",
+        "Descprition": "Near Gay and Hearty Sports and Ex"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.569643, 6.681547] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/6",
+        "latitude": 6.683479,
+        "longitude": -1.569976,
+        "Y": 693192.49015748035,
+        "X": 730642.44094488188,
+        "height": "253.49100000000001",
+        "Descprition": "Just at the Junction at the road to the Swimming Pool"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.569976, 6.683479] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/7",
+        "latitude": 6.684955,
+        "longitude": -1.570447,
+        "Y": 693022.24737532809,
+        "X": 731177.9888451444,
+        "height": "256.00900000000001",
+        "Descprition": "Basic School RoundAbout"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.570447, 6.684955] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/8",
+        "latitude": 6.684453,
+        "longitude": -1.572339,
+        "Y": 692335.91863517056,
+        "X": 730996.50918635167,
+        "height": "255.947",
+        "Descprition": "Close to the Catholic Church"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.572339, 6.684453] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/8A",
+        "latitude": 6.684331,
+        "longitude": -1.572436,
+        "Y": 692300.59055118111,
+        "X": 730952.44094488188,
+        "height": "256.28100000000001",
+        "Descprition": "Close to the Road Infront of Protestant Church"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.572436, 6.684331] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "SGA P130/13/9",
+        "latitude": 6.683946,
+        "longitude": -1.573543,
+        "Y": 691899.09120734909,
+        "X": 730813.33005249349,
+        "height": "265.036",
+        "Descprition": "Along the Road from Basic School RoundAbout to College of Art"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.573543, 6.683946] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "TP7",
+        "latitude": 6.674855,
+        "longitude": -1.565849,
+        "Y": 694685.77427821513,
+        "X": 727512.15551181091,
+        "height": "263.27499999999998",
+        "Descprition": "Behind N-Block"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.565849, 6.674855] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "UST 66-75",
+        "latitude": 6.679949,
+        "longitude": -1.573534,
+        "Y": 691900.37401574804,
+        "X": 729363.39566929138,
+        "height": "272.82299999999998",
+        "Descprition": "Union Oil Junction"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.573534, 6.679949] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "UST GE 4-93-12",
+        "latitude": 6.681797,
+        "longitude": -1.57356,
+        "Y": 691891.83070866147,
+        "X": 730033.51377952751,
+        "height": "274.37299999999999",
+        "Descprition": "Near Sculpture Workshop"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.57356, 6.681797] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "UST GE 4-93-13",
+        "latitude": 6.681439,
+        "longitude": -1.57389,
+        "Y": 691772.05708661419,
+        "X": 729904.05183727038,
+        "height": "273.65699999999998",
+        "Descprition": "Near Sculpture Workshop"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.57389, 6.681439] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "UST GE 4-93-14",
+        "latitude": 6.681367,
+        "longitude": -1.573917,
+        "Y": 691762.19160104985,
+        "X": 729877.77887139108,
+        "height": "273.36",
+        "Descprition": "Near Sculpture Workshop"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.573917, 6.681367] }
+    }
+  ]
+}

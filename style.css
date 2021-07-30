@@ -1,3 +1,9 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:0;
+}
+
 .wrapper{
     width: 100%;
 }
@@ -51,4 +57,11 @@
 .footer section{
     background-color: rgb(19, 37, 51);
     width: 100%;
+}
+
+
+.coords_info{
+    position:float;
+    height:40vh;
+    width:40vw;
 }
