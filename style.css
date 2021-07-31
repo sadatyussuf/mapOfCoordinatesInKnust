@@ -61,7 +61,39 @@
 
 
 .coords_info{
-    position:float;
-    height:40vh;
-    width:40vw;
+    /* position: absolute; */
+    /* height:40vh; */
+    position: fixed;
+    top: 15;
+    height: fit-content;
+    z-index: 9999;
+    width:30vw;
+    color:aliceblue;
+    border: 1px solid rgb(172, 118, 56);
+    background-color: rgba(13, 133, 224, 0.788);
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.jsonValue{
+    font-size: 1.5rem;
+}
+
+.close{
+    position: absolute;
+    top: 0.1em;
+    right: 0.5em;
+    height: fit-content;
+    width: 1.4rem;
+    border: none;
+    background-color: transparent;
+    
+}
+.bi-x-circle{
+    color: rgb(255, 0, 0);
+    /* background-color: rgb(177, 93, 93); */
+}
+
+.hide{
+    visibility: hidden;
 }

@@ -35,25 +35,15 @@
        <!-- bootstrap 5 css -->
        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    
- 
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.0/dist/L.Control.Locate.min.css" />
+       
     <title>Document</title>
 </head>
 <body>
     <div class="wrapper"> 
 
-      <header class="coords_info">
-        <h1 class="coords_info_name">Name: <span class='name'></span></h1>
-        <h2 class="coords_info_loc">Location: <span class='loc'></span></h2>
-        <h2>Height: <span class='height'></span></h2>
-        <div class="coords_info_recCOORDS">
-          <h2>Northerns: <span class='north'></span></h2>
-          <h2>Easterns: <span class='east'></span></h2>
-        </div>
-        <div class="coords_info_latlon">
-          <h2>Latitude: <span class='lat'></span></h2>
-          <h2>Longitude: <span class='lon'></span></h2>
-        </div>
-    </header>
+     
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -78,6 +68,26 @@
                 </div>
             </div>
         </nav>
+
+        <header class="coords_info hide">
+
+          <button class='close'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg></button>
+
+          <h1 class="coords_info_name">Name: <span class='jsonValue name'></span></h1>
+          <h2 class="coords_info_loc">Location: <span class='jsonValue loc'></span></h2>
+          <h2>Height: <span class='jsonValue height'></span></h2>
+          <div class="coords_info_recCOORDS">
+            <h2>Northerns: <span class='jsonValue north'></span></h2>
+            <h2>Easterns: <span class='jsonValue east'></span></h2>
+          </div>
+          <div class="coords_info_latlon">
+            <h2>Latitude: <span class='jsonValue lat'></span></h2>
+            <h2>Longitude: <span class='jsonValue lon'></span></h2>
+          </div>
+      </header>
 
         <div id="mapid"></div>
 
@@ -143,9 +153,12 @@
   const db = firebase.database().ref('features') ;
 </script>
 
-  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
        <!-- bootstrap 5 js -->
    <!-- Option 1: Bootstrap Bundle with Popper -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+   <script src="script.js"></script>
 </body>
 </html>
