@@ -92,8 +92,39 @@ db.on('value', (snapshot) => {
 
             popupBox.classList.remove('hide')
 
+
+
         } );
-        
+
+
+
+
+            // function requestAroundLatLong(lat,lng,km){
+                // var angle_per_km = 360 / (2 * pi * 6378) = 0.0089833458
+                var angle=0.1 * 0.0089833458;
+                var gtlat= 6.67378
+                var gtlon =-1.565257
+                // Adding Markers
+                var marker = L.marker([6.67378,-1.565257]).addTo(mymap);
+                // Adding popups
+                marker.bindPopup("i'm here.")
+                                var polygon = L.polygon([
+                                    [gtlat-angle, gtlon-angle],
+                                    [gtlat+angle, gtlon-angle],
+                                    [gtlat+angle, gtlon+angle],
+                                    [gtlat-angle, gtlon+angle]
+                                ], {color: 'rgba(60, 182, 190, 0.10)',weight: 1}).addTo(mymap);
+                                // }
+                // console.log(polygon.getLatLngs())
+                // console.log(polygon.getBounds())
+                // Polygon.getBounds().contains(MarketLatLng);
+                
+                
+                if (polygon.getBounds().contains(coords)){
+                    console.log(`Name: ${getName}, coord: ${coords.reverse()}`)
+                }
+                
+                        
     });
    
     // updateStarCount(postElement, data);
