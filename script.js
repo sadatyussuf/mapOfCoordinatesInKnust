@@ -25,35 +25,6 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1Ijoic2FkYXR5dXNzdWYiLCJhIjoiY2twbGswNzNxMDZmbTJ2cndpbjlkZ24yaCJ9.fVWAfzU_pkkU5EEVtiOsCQ'
 }).addTo(mymap);
 
-// mymap.addControl(L.control.locate({
-//     locateOptions: {
-//         enableHighAccuracy: true
-// },
-
-// }));
-// const lc = L.control.locate().addTo(mymap);
-// lc.start();
-// lc.locate();
-// console.log(lc.start())
-
-
-
-
-
-// Dealing with events
-// var popup = L.popup();
-
-// function onMapClick(e){
-//     popup
-//     .setLatLng(e.latlng)
-//     .setContent(`You clicked the map at ${e.latlng}`)
-//     .openOn(mymap);
-// }
-// mymap.on('click',onMapClick);
-
-
-
-
 var geojsonMarkerOptions = {
         radius: 5,
         fillColor: "#ff7800",
@@ -65,6 +36,7 @@ var geojsonMarkerOptions = {
 
 db.on('value', (snapshot) => {
     const data = snapshot.val();
+
     data.forEach(element => {
         const getName = element.properties.Name
         const getlocation = element.properties.Descprition
@@ -91,72 +63,55 @@ db.on('value', (snapshot) => {
             }
 
             popupBox.classList.remove('hide')
-
-
-
         } );
-
-
-
-
-            // function requestAroundLatLong(lat,lng,km){
-                // var angle_per_km = 360 / (2 * pi * 6378) = 0.0089833458
-                var angle=0.1 * 0.0089833458;
-                var gtlat= 6.67378
-                var gtlon =-1.565257
-                // Adding Markers
-                var marker = L.marker([6.67378,-1.565257]).addTo(mymap);
-                // Adding popups
-                marker.bindPopup("i'm here.")
-                                var polygon = L.polygon([
-                                    [gtlat-angle, gtlon-angle],
-                                    [gtlat+angle, gtlon-angle],
-                                    [gtlat+angle, gtlon+angle],
-                                    [gtlat-angle, gtlon+angle]
-                                ], {color: 'rgba(60, 182, 190, 0.10)',weight: 1}).addTo(mymap);
-                                // }
-                // console.log(polygon.getLatLngs())
-                // console.log(polygon.getBounds())
-                // Polygon.getBounds().contains(MarketLatLng);
-                
-                
-                if (polygon.getBounds().contains(coords)){
-                    console.log(`Name: ${getName}, coord: ${coords.reverse()}`)
-                }
-                
                         
     });
-   
-    // updateStarCount(postElement, data);
-  });
 
-  
+    mymap.locate({setView: true, maxZoom: 19});
+    function onLocationFound(e) {
+                // var radius = e.accuracy;
+                    // L.marker(e.latlng).addTo(mymap)
+                    //     .bindPopup("You are within " + radius + " meters from this point").openPopup();
+                
+                    // 
+                const angle=0.07 * 0.0089833458;
+                const currentUserLoc = e.latlng
+                var gtlat= currentUserLoc.lat
+                var gtlng =currentUserLoc.lng
+                // Adding Markers
+                var marker = L.marker([gtlat,gtlng]).addTo(mymap);
+                // Adding popups
+                marker.bindPopup("i'm here.")
+                var polygon = L.polygon([
+                    [gtlat-angle, gtlng-angle],
+                    [gtlat+angle, gtlng-angle],
+                    [gtlat+angle, gtlng+angle],
+                    [gtlat-angle, gtlng+angle]
+                ], {color: 'rgba(60, 182, 190, 0.10)',weight: 1}).addTo(mymap);
+                
+                var clc = L.circle(currentUserLoc, 100).addTo(mymap);
+                    // console.log(polygon.getBounds())
+                    // console.log(clc.getBounds())
+                    // console.log(gtlng)
+                    const cordList = []
+                    data.forEach(element => {
+                        var coords = element.geometry.coordinates
+                        const getName = element.properties.Name
+                        if (clc.getBounds().contains(coords)){
+                        cordList.push(`Name: ${getName}, coord: ${coords.reverse()}`)
+                        // console.log(`Name: ${getName}, coord: ${coords.reverse()}`)
+                        }
+                    })
+                    if (cordList.length == 0){
+                        console.log('None')
+                    }else{
+                        console.log(cordList)
+                    }
+                    
+                }
+                mymap.on('locationfound', onLocationFound)
+});
 
-  closebtn.addEventListener('click',()=>{
+closebtn.addEventListener('click',()=>{
     popupBox.classList.add('hide')
 })
-
-
-function userLocation(){
-    mymap.locate({setView: true, maxZoom: 19});
-
-    function onLocationFound(e) {
-        var radius = e.accuracy;
-    
-        L.marker(e.latlng).addTo(mymap)
-            .bindPopup("You are within " + radius + " meters from this point").openPopup();
-    
-        L.circle(e.latlng, radius).addTo(mymap);
-    }
-    
-    mymap.on('locationfound', onLocationFound)
-}
-
-
-
-// Adding Markers
-// var marker = L.marker([6.6745,-1.5716]).addTo(mymap);
-
-// Adding popups
-// marker.bindPopup("<b>Hello World</b><br>I am a popup.")
-

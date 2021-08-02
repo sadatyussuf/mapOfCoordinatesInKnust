@@ -47,14 +47,14 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">knustMap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active"   href="https://www.knust.edu.gh/" target="_blank">KNUST Home</a>
+                        <a class="nav-link active"   href="https://www.knust.edu.gh/" target="_blank">KNUST Homepage</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="https://geomatics.knust.edu.gh/" target="_blank">Geomatic Department</a>
@@ -76,18 +76,26 @@
             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
           </svg></button>
 
-          <h1 class="coords_info_name">Name: <span class='jsonValue name'></span></h1>
-          <h2 class="coords_info_loc">Location: <span class='jsonValue loc'></span></h2>
-          <h2>Height: <span class='jsonValue height'></span></h2>
+          <h1 class="coords_info_name"><span class='staticValue'>Name: </span><span class='jsonValue name'></span></h1>
+
+          <h2 class="coords_info_loc"><span class='staticValue'>Location: </span><span class='jsonValue loc'></span></h2>
+
+          <h2><span class='staticValue'>Height: </span><span class='jsonValue height'></span></h2>
+
           <div class="coords_info_recCOORDS">
-            <h2>Northerns: <span class='jsonValue north'></span></h2>
-            <h2>Easterns: <span class='jsonValue east'></span></h2>
+            <h2><span class='staticValue'>Northerns: </span><span class='jsonValue north'></span></h2>
+            <h2><span class='staticValue'>Easterns: </span><span class='jsonValue east'></span></h2>
           </div>
+
           <div class="coords_info_latlon">
-            <h2>Latitude: <span class='jsonValue lat'></span></h2>
-            <h2>Longitude: <span class='jsonValue lon'></span></h2>
+            <h2><span class='staticValue'>Latitude: </span><span class='jsonValue lat'></span></h2>
+            <h2><span class='staticValue'>Longitude: </span><span class='jsonValue lon'></span></h2>
           </div>
       </header>
+
+      <div class="find_coords">
+
+      </div>
 
         <div id="mapid"></div>
 

@@ -22,24 +22,6 @@
     color: rgb(255, 255, 255);
     margin-left:6rem ;
 }
-/* .navbar ul{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
-    gap: 2rem;
-    
-} */
-/* .navbar li{
-    margin-top: 1rem;
-} */
-
-/* .navbar a{
-    text-decoration: none;
-    color: rgba(140, 140, 240, 0.13);
-} */
-
 
 #mapid{
     height: 80vh;
@@ -51,7 +33,6 @@
     justify-content: center;
     height: 10vh;
     background-color: rgb(19, 37, 51);
-    /* color: #fff; */
 }
 
 .footer section{
@@ -61,8 +42,6 @@
 
 
 .coords_info{
-    /* position: absolute; */
-    /* height:40vh; */
     position: fixed;
     top: 15;
     height: fit-content;
@@ -72,13 +51,19 @@
     border: 1px solid rgb(172, 118, 56);
     background-color: rgba(13, 133, 224, 0.788);
     padding: 0.5rem 1rem;
-    font-size: 1.5rem;
+    font-size: 1.5rem;  
 }
 
 .jsonValue{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    color: #d7dee4;
+    text-align: center;
 }
-
+.staticValue{
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #132533;
+}
 .close{
     position: absolute;
     top: 0.1em;
