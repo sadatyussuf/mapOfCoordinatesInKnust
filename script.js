@@ -11,6 +11,7 @@ const popupBox = document.querySelector('.coords_info')
 
 
 
+
 // Preparing the map   [51.505,-0.09]
 var mymap = L.map('mapid').setView([6.6745,-1.5716],15)
 
@@ -78,33 +79,43 @@ db.on('value', (snapshot) => {
                 const currentUserLoc = e.latlng
                 var gtlat= currentUserLoc.lat
                 var gtlng =currentUserLoc.lng
+                // var gtlat = 6.673823
+                // var gtlng = -1.565246
                 // Adding Markers
                 var marker = L.marker([gtlat,gtlng]).addTo(mymap);
                 // Adding popups
                 marker.bindPopup("i'm here.")
-                var polygon = L.polygon([
-                    [gtlat-angle, gtlng-angle],
-                    [gtlat+angle, gtlng-angle],
-                    [gtlat+angle, gtlng+angle],
-                    [gtlat-angle, gtlng+angle]
-                ], {color: 'rgba(60, 182, 190, 0.10)',weight: 1}).addTo(mymap);
+                // var polygon = L.polygon([
+                //     [gtlat-angle, gtlng-angle],
+                //     [gtlat+angle, gtlng-angle],
+                //     [gtlat+angle, gtlng+angle],
+                //     [gtlat-angle, gtlng+angle]
+                // ], {color: 'rgba(60, 182, 190, 0.10)',weight: 1}).addTo(mymap);
                 
                 var clc = L.circle(currentUserLoc, 100).addTo(mymap);
-                    // console.log(polygon.getBounds())
-                    // console.log(clc.getBounds())
-                    // console.log(gtlng)
                     const cordList = []
                     data.forEach(element => {
                         var coords = element.geometry.coordinates
                         const getName = element.properties.Name
                         if (clc.getBounds().contains(coords)){
-                        cordList.push(`Name: ${getName}, coord: ${coords.reverse()}`)
+                        cordList.push(`Name: ${getName},  LatLng: ${coords}`)
                         // console.log(`Name: ${getName}, coord: ${coords.reverse()}`)
                         }
                     })
+                    const numFound = document.querySelector('.numFound')
+                    const ptsFound = document.querySelector('.listControlFound')
                     if (cordList.length == 0){
-                        console.log('None')
+
+                        numFound.textContent = 0
+                        console.log(cordList)
                     }else{
+
+                        numFound.textContent = cordList.length
+
+                        var result = cordList.map(element =>{
+                            return `<li class='itemList'>${element}</li>`
+                        }).join('')
+                        ptsFound.innerHTML = result
                         console.log(cordList)
                     }
                     

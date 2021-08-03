@@ -40,7 +40,29 @@
     width: 100%;
 }
 
-
+.find_coords{
+    position: fixed;
+    top: 15;
+    right:0;
+    height: fit-content;
+    z-index: 9999;
+    width:30vw;
+    color:aliceblue;
+    background-color: #132533b7;
+}
+.find_coords h2{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+/* .find_coords ul{
+    text-align:center;
+} */
+.find_coords ul li{
+    list-style: none;
+    font-size: 1rem;
+    padding: 0.1rem 0.5;
+}
 .coords_info{
     position: fixed;
     top: 15;
@@ -81,4 +103,10 @@
 
 .hide{
     visibility: hidden;
+}
+form p{
+    color: azure;
+    background-color:red;
+    width:29rem;
+    height: 1rem;
 }

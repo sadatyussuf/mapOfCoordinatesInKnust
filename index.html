@@ -94,6 +94,8 @@
       </header>
 
       <div class="find_coords">
+        <h2><span class="numFound"></span> Control Point(s) Found</h2>
+        <ul class="listControlFound"></ul>
 
       </div>
 
@@ -157,8 +159,9 @@
   firebase.initializeApp(firebaseConfig);
 
   firebase.analytics();
-
-  const db = firebase.database().ref('features') ;
+  //const dbf =;
+//!-- dbf.settings({timestampsInSnapshots:true}); -->
+  const db =firebase.database().ref('features') ;
 </script>
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.0/dist/L.Control.Locate.min.js" charset="utf-8"></script> -->
