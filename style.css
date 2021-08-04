@@ -3,10 +3,13 @@
     padding:0;
     box-sizing:0;
 }
-
-.wrapper{
-    width: 100%;
+body{
+    background-color: rgb(19, 37, 51);
 }
+
+/* .wrapper{
+    width: 100%;
+} */
 .navbar{
     
     background-color: rgb(19, 37, 51);
@@ -39,7 +42,10 @@
     background-color: rgb(19, 37, 51);
     width: 100%;
 }
+.footer a{
+    padding:0.1rem 0.2rem;
 
+}
 .find_coords{
     position: fixed;
     top: 15;
@@ -70,8 +76,8 @@
     z-index: 9999;
     width:30vw;
     color:aliceblue;
-    border: 1px solid rgb(172, 118, 56);
-    background-color: rgba(13, 133, 224, 0.788);
+    border: 1px solid rgba(15, 38, 56, 0.925);
+    background-color: rgba(15, 38, 56, 0.747);
     padding: 0.5rem 1rem;
     font-size: 1.5rem;  
 }
@@ -84,7 +90,7 @@
 .staticValue{
     font-size: 1.4rem;
     font-weight: 900;
-    color: #132533;
+    color: #0591fd;
 }
 .close{
     position: absolute;
@@ -110,3 +116,83 @@ form p{
     width:29rem;
     height: 1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+@media(max-device-width:480px){
+    .coords_info{
+        height: 100vh;
+        width:100vw;  
+        background-color: rgba(15, 38, 56, 0.925);
+        
+    }
+    .find_coords{
+        visibility:hidden;
+    }
+    .jsonValue{
+        font-size: 1rem;
+    }
+    .staticValue{
+        font-size: 1.2rem;
+        color: #188ee7;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    /* Styles */
+    .coords_info{
+        height: 100vh;
+        width:60vw;  
+        background-color: rgba(15, 38, 56, 0.925);
+    }
+    .find_coords{
+        visibility:hidden;
+    }
+    .staticValue{
+        font-size: 1.2rem;
+        color: #188ee7;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+        /* Styles */
+        .coords_info{
+            height: 100vh;
+            width:50vw;  
+            padding: 0.1rem 0.2rem;
+            background-color: rgba(15, 38, 56, 0.925);
+        }
+        .find_coords{
+            visibility:hidden;
+        }
+        .staticValue{
+            font-size: 1.2rem;
+            color: #188ee7;
+        }
+    
+        }
+
+        @media (max-width: 1200px) and (min-width: 1025px) {
+            /* Styles */
+            .coords_info{
+                width:40vw;  
+                padding: 0.1rem 0.2rem;
+                background-color: rgba(15, 38, 56, 0.781);
+            }
+            .find_coords{
+                visibility:hidden;
+            }
+            .staticValue{
+
+                color: #1a9afc;
+            }
+        
+        }
