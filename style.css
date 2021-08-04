@@ -102,6 +102,18 @@ body{
     background-color: transparent;
     
 }
+
+.closeLocImage{
+    position: absolute;
+    top: 0.1em;
+    right: 0.5em;
+    height: fit-content;
+    width: 1.4rem;
+    border: none;
+    background-color: transparent;
+}
+
+
 .bi-x-circle{
     color: rgb(255, 0, 0);
     /* background-color: rgb(177, 93, 93); */
@@ -118,6 +130,20 @@ form p{
 }
 
 
+.locImg{
+    position: fixed;
+    top: 70px;
+    right:0;
+    height: fit-content;
+    z-index: 9999;
+    background-color:#273b7a;
+    border: none;
+    margin-right:0.5rem
+    
+}
+.locImg img{
+    width:3.5rem;
+}
 
 
 

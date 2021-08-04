@@ -9,7 +9,8 @@ const lonOfCoord = document.querySelector('.lon')
 const closebtn = document.querySelector('.close')
 const popupBox = document.querySelector('.coords_info')
 
-
+const closeLocImage = document.querySelector('.closeLocImage ')
+const locImg = document.querySelector('.locImg')
 
 
 // Preparing the map   [51.505,-0.09]
@@ -68,61 +69,69 @@ db.on('value', (snapshot) => {
                         
     });
 
-    mymap.locate({setView: true, maxZoom: 19});
-    function onLocationFound(e) {
-                // var radius = e.accuracy;
-                    // L.marker(e.latlng).addTo(mymap)
-                    //     .bindPopup("You are within " + radius + " meters from this point").openPopup();
-                
-                    // 
-                const angle=0.07 * 0.0089833458;
-                const currentUserLoc = e.latlng
-                var gtlat= currentUserLoc.lat
-                var gtlng =currentUserLoc.lng
-                // var gtlat = 6.673823
-                // var gtlng = -1.565246
-                // Adding Markers
-                var marker = L.marker([gtlat,gtlng]).addTo(mymap);
-                // Adding popups
-                marker.bindPopup("i'm here.")
-                // var polygon = L.polygon([
-                //     [gtlat-angle, gtlng-angle],
-                //     [gtlat+angle, gtlng-angle],
-                //     [gtlat+angle, gtlng+angle],
-                //     [gtlat-angle, gtlng+angle]
-                // ], {color: 'rgba(60, 182, 190, 0.10)',weight: 1}).addTo(mymap);
-                
-                var clc = L.circle(currentUserLoc, 100).addTo(mymap);
-                    const cordList = []
-                    data.forEach(element => {
-                        var coords = element.geometry.coordinates
-                        const getName = element.properties.Name
-                        if (clc.getBounds().contains(coords)){
-                        cordList.push(`Name: ${getName},  LatLng: ${coords}`)
-                        // console.log(`Name: ${getName}, coord: ${coords.reverse()}`)
+
+    // * Click to show the user's location and the control points avaliable within 100m of the user
+    locImg.addEventListener('click',()=>{
+
+    
+
+        mymap.locate({setView: true, maxZoom: 19});
+        function onLocationFound(e) {
+                    // const angle=0.07 * 0.0089833458;
+                    const currentUserLoc = e.latlng
+                    var gtlat= currentUserLoc.lat
+                    var gtlng =currentUserLoc.lng
+                    // var gtlat = 6.673823
+                    // var gtlng = -1.565246
+                    // Adding Markers
+                    var marker = L.marker([gtlat,gtlng]).addTo(mymap);
+                    // Adding popups
+                    marker.bindPopup("i'm here.")
+                    var clc = L.circle(currentUserLoc, 100).addTo(mymap);
+                        const cordList = []
+                        data.forEach(element => {
+                            var coords = element.geometry.coordinates
+                            const getName = element.properties.Name
+                            if (clc.getBounds().contains(coords)){
+                            cordList.push(`Name: ${getName},  LatLng: ${coords}`)
+                            }
+                        })
+                        const numFound = document.querySelector('.numFound')
+                        const ptsFound = document.querySelector('.listControlFound')
+                        if (cordList.length == 0){
+    
+                            numFound.textContent = 0
+                            console.log(cordList)
+                        }else{
+    
+                            numFound.textContent = cordList.length
+    
+                            var result = cordList.map(element =>{
+                                return `<li class='itemList'>${element}</li>`
+                            }).join('')
+                            ptsFound.innerHTML = result
+                            console.log(cordList)
                         }
-                    })
-                    const numFound = document.querySelector('.numFound')
-                    const ptsFound = document.querySelector('.listControlFound')
-                    if (cordList.length == 0){
-
-                        numFound.textContent = 0
-                        console.log(cordList)
-                    }else{
-
-                        numFound.textContent = cordList.length
-
-                        var result = cordList.map(element =>{
-                            return `<li class='itemList'>${element}</li>`
-                        }).join('')
-                        ptsFound.innerHTML = result
-                        console.log(cordList)
+                        
                     }
-                    
-                }
-                mymap.on('locationfound', onLocationFound)
+                    mymap.on('locationfound', onLocationFound)
+
+
+                    document.querySelector('.find_coords').classList.remove('hide')
+                    locImg.classList.add('hide')
+    })
+    
+
+
+
 });
 
 closebtn.addEventListener('click',()=>{
     popupBox.classList.add('hide')
+})
+
+closeLocImage.addEventListener('click',()=>{
+    document.querySelector('.find_coords').classList.add('hide')
+    locImg.classList.remove('hide')
+    document.location.reload(true)
 })
