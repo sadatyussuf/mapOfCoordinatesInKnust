@@ -155,14 +155,20 @@ form p{
 
 @media(max-device-width:480px){
     .coords_info{
+        top: 1px;
         height: 100vh;
         width:100vw;  
         background-color: rgba(15, 38, 56, 0.925);
+        z-index: 999999;
         
     }
     .find_coords{
-        visibility:hidden;
-    }
+        top: 1px;
+        height: 100%;
+        width:100vw;  
+        overflow: scroll;
+        font-size:1rem;
+    } 
     .jsonValue{
         font-size: 1rem;
     }
@@ -170,18 +176,27 @@ form p{
         font-size: 1.2rem;
         color: #188ee7;
     }
+
+    .locImg img{
+        width:2.5rem;
+    }
 }
 
 @media (max-width: 768px) and (min-width: 481px) {
     /* Styles */
     .coords_info{
+        top: 1px;
         height: 100vh;
         width:60vw;  
         background-color: rgba(15, 38, 56, 0.925);
     }
     .find_coords{
-        visibility:hidden;
-    }
+        top: 1px;
+        left: 0;
+        height: 100%;
+        width:60vw;  
+        background-color: rgba(15, 38, 56, 0.925);
+    } 
     .staticValue{
         font-size: 1.2rem;
         color: #188ee7;
@@ -197,8 +212,11 @@ form p{
             background-color: rgba(15, 38, 56, 0.925);
         }
         .find_coords{
-            visibility:hidden;
-        }
+            left: 0;
+            height: 100%;
+            width:50vw;  
+            background-color: rgba(15, 38, 56, 0.925);
+        } 
         .staticValue{
             font-size: 1.2rem;
             color: #188ee7;
@@ -214,8 +232,11 @@ form p{
                 background-color: rgba(15, 38, 56, 0.781);
             }
             .find_coords{
-                visibility:hidden;
-            }
+                left: 0;
+                /* height: 100%; */
+                width:50vw;  
+                background-color: rgba(15, 38, 56, 0.925);
+            } 
             .staticValue{
 
                 color: #1a9afc;

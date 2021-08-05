@@ -19,8 +19,8 @@ var mymap = L.map('mapid').setView([6.6745,-1.5716],15)
 // Setting up the map
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    // maxZoom: 25,
-    // minZoom: 15,
+    maxZoom: 25,
+    minZoom: 15,
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
@@ -36,6 +36,8 @@ var geojsonMarkerOptions = {
         fillOpacity: 0.8
     };
 
+
+    //* connecting the firebase database
 db.on('value', (snapshot) => {
     const data = snapshot.val();
 
@@ -79,15 +81,15 @@ db.on('value', (snapshot) => {
         function onLocationFound(e) {
                     // const angle=0.07 * 0.0089833458;
                     const currentUserLoc = e.latlng
-                    var gtlat= currentUserLoc.lat
-                    var gtlng =currentUserLoc.lng
-                    // var gtlat = 6.673823
-                    // var gtlng = -1.565246
+                    // var gtlat= currentUserLoc.lat
+                    // var gtlng =currentUserLoc.lng
+                    var gtlat = 6.673823
+                    var gtlng = -1.565246
                     // Adding Markers
                     var marker = L.marker([gtlat,gtlng]).addTo(mymap);
                     // Adding popups
                     marker.bindPopup("i'm here.")
-                    var clc = L.circle(currentUserLoc, 100).addTo(mymap);
+                    var clc = L.circle([gtlat,gtlng], 100).addTo(mymap);
                         const cordList = []
                         data.forEach(element => {
                             var coords = element.geometry.coordinates
@@ -110,7 +112,7 @@ db.on('value', (snapshot) => {
                                 return `<li class='itemList'>${element}</li>`
                             }).join('')
                             ptsFound.innerHTML = result
-                            console.log(cordList)
+                            
                         }
                         
                     }
@@ -119,6 +121,7 @@ db.on('value', (snapshot) => {
 
                     document.querySelector('.find_coords').classList.remove('hide')
                     locImg.classList.add('hide')
+                    popupBox.classList.add('hide')
     })
     
 
