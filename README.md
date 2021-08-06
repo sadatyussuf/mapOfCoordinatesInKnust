@@ -1,6 +1,6 @@
 # A map showing  the various Control points in KNUST
 
-The initial image showing all the control points in knust.
+## The initial image showing all the control points in knust.
 ![A screenshot of the image 1](images/1.png)
 
 

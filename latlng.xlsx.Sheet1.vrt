@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="latlng-Sheet3">
+        <SrcDataSource relativeToVRT="1">latlng.xlsx</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>Sheet1</SrcLayer>
+        <Field name="Name" src="Name" type="String"/>
+        <Field name="latitude" src="latitude" type="Real"/>
+        <Field name="longitude" src="longitude" type="Real"/>
+        <Field name="X" src="X" type="Real"/>
+        <Field name="Y" src="Y" type="Real"/>
+        <Field name="height" src="height" type="String"/>
+        <Field name="Descprition" src="Descprition" type="String"/>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:4326</LayerSRS>
+        <GeometryField encoding="PointFromColumns" x="longitude" y="latitude"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
