@@ -7,9 +7,6 @@ body{
     background-color: rgb(19, 37, 51);
 }
 
-/* .wrapper{
-    width: 100%;
-} */
 .navbar{
     
     background-color: rgb(19, 37, 51);
@@ -65,9 +62,6 @@ body{
     text-align: center;
     font-weight: 700;
 }
-/* .find_coords ul{
-    text-align:center;
-} */
 .find_coords ul li{
     list-style: none;
     font-size: 1rem;

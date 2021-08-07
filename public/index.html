@@ -12,9 +12,7 @@
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
-    
-
-
+  
     <!-- ** Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -37,8 +35,25 @@
    
        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"> -->
        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.0/dist/L.Control.Locate.min.css" /> -->
+        <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
        
-    <title>Document</title>
+    <title>KNUST Map</title>
 </head>
 <body>
     <div class="wrapper"> 
@@ -76,15 +91,16 @@
             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
           </svg></button>
 
-          <h1 class="coords_info_name"><span class='staticValue'>Name: </span><span class='jsonValue name'></span></h1>
+          <h2 class="coords_info_header">GH National Grid(ft)</h2>
+          <h2 class="coords_info_name"><span class='staticValue'>Name: </span><span class='jsonValue name'></span></h2>
 
           <h2 class="coords_info_loc"><span class='staticValue'>Location: </span><span class='jsonValue loc'></span></h2>
 
           <h2><span class='staticValue'>Height: </span><span class='jsonValue height'></span></h2>
 
           <div class="coords_info_recCOORDS">
-            <h2><span class='staticValue'>Northerns: </span><span class='jsonValue north'></span></h2>
-            <h2><span class='staticValue'>Easterns: </span><span class='jsonValue east'></span></h2>
+            <h2><span class='staticValue'>Northings: </span><span class='jsonValue north'></span></h2>
+            <h2><span class='staticValue'>Eastings: </span><span class='jsonValue east'></span></h2>
           </div>
 
           <div class="coords_info_latlon">

@@ -63,7 +63,8 @@ db.on('value', (snapshot) => {
             if ( element.properties.height == 'N/A') {
                 heightOfCoord.textContent = element.properties.height
             } else {
-                heightOfCoord.textContent = Math.round((parseFloat(element.properties.height) + Number.EPSILON) * 100) / 100
+                heightInFT = parseFloat(element.properties.height) * 3.28084
+                heightOfCoord.textContent = Math.round((heightInFT + Number.EPSILON) * 100) / 100
             }
 
             popupBox.classList.remove('hide')
@@ -74,17 +75,11 @@ db.on('value', (snapshot) => {
 
     // * Click to show the user's location and the control points avaliable within 100m of the user
     locImg.addEventListener('click',()=>{
-
-    
-
         mymap.locate({setView: true, maxZoom: 19});
         function onLocationFound(e) {
-                    // const angle=0.07 * 0.0089833458;
                     const currentUserLoc = e.latlng
                     var gtlat= currentUserLoc.lat
                     var gtlng =currentUserLoc.lng
-                    // var gtlat = 6.673823
-                    // var gtlng = -1.565246
                     // Adding Markers
                     var marker = L.marker([gtlat,gtlng]).addTo(mymap);
                     // Adding popups
@@ -123,10 +118,6 @@ db.on('value', (snapshot) => {
                     locImg.classList.add('hide')
                     popupBox.classList.add('hide')
     })
-    
-
-
-
 });
 
 closebtn.addEventListener('click',()=>{
@@ -138,3 +129,14 @@ closeLocImage.addEventListener('click',()=>{
     locImg.classList.remove('hide')
     document.location.reload(true)
 })
+
+// LOcation Images Fades In and Out
+var mycounter = 0
+
+var interval = window.setInterval(function(){
+    if(locImg.style.opacity == '0.5'){
+        locImg.style.opacity = '1';
+    }else{
+        locImg.style.opacity = '0.5';
+    }
+}, 500);
